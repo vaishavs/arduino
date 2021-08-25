@@ -1,7 +1,7 @@
 #include <SoftwareSerial.h>
 
 const int sensor = A0;  //moisture sensor
-const int OUT =  2;     //digital output
+const int RELAY =  2;     //digital output
 
 String apiKey = "62AFF1XXK91V5KVU";   // Edit this API key according to your Account    
 
@@ -17,7 +17,7 @@ void setup()
   //ser.println("AT+RST");    // Resetting ESP8266
 
   pinMode(sensor, INPUT);
-  pinMode(OUT, OUTPUT);
+  pinMode(RELAY, OUTPUT);
 
   char inv ='"';
 
